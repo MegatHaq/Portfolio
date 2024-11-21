@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    fontFamily: {
+      primary: ["Roboto"],
+    },
   },
   plugins: [],
 } satisfies Config;
