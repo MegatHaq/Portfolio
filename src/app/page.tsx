@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div>
-      Hello This is Megat
-      <div className="font-primary">Hello This is Megat</div>
+    <div className="h-screen w-full overflow-auto">
+      <div className="h-1/2">First Content</div>
+      <div className="h-1/2">Second Content</div>
     </div>
   );
 }
