@@ -9,7 +9,7 @@ type EducationInfoProps = {
 export function EducationInfo(props: EducationInfoProps) {
   const { text, title, badge } = props;
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ml-8">
       <div className="flex">
         <h1 className="text-2xl">{title}</h1>
         {badge.map((badge, index) => (

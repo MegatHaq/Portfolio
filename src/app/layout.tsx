@@ -29,7 +29,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="font-primary overflow-hidden scrollbar">
+      <body className="font-primary overflow-hidden">
         <OverviewBox TopBar={<TopBar items={items} />}>{children}</OverviewBox>
       </body>
     </html>
