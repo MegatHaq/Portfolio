@@ -1,3 +1,10 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { type CarouselApi } from "@/components/ui/carousel";
 import {
   Carousel,
@@ -10,7 +17,13 @@ import Image from "next/image";
 import React, { Dispatch, SetStateAction } from "react";
 
 type ImageCarouselsProps = {
-  item: string[];
+  item: {
+    image: string;
+    card: {
+      title: string;
+      description: string;
+    };
+  }[];
   current: number;
   setCurrent: Dispatch<SetStateAction<number>>;
 };
@@ -37,13 +50,21 @@ export function ImageCarousels(props: ImageCarouselsProps) {
         <CarouselContent>
           {item.map((item, index) => (
             <CarouselItem key={index} className="">
-              <Image
-                src={item}
-                alt="nothing"
-                width={350}
-                height={350}
-                className="brightness-50 rounded-md"
-              />
+              <Card className="border-2 shadow-md">
+                <CardHeader>
+                  <CardTitle>{item.card.title}</CardTitle>
+                  <CardDescription>{item.card.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src={item.image}
+                    alt="nothing"
+                    width={350}
+                    height={350}
+                    className="brightness-50 rounded-md"
+                  />
+                </CardContent>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>

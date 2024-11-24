@@ -5,7 +5,7 @@ export function FirstContent() {
   return (
     <div className="w-full flex mt-[15vh]">
       <div className="w-1/2 flex flex-col ml-[15vw] gap-4">
-        <p className="text-justify">My name is Megat Abdul Haq</p>
+        <p className="text-justify">My name is Megat Abdul Haq.</p>
         <h1 className="text-4xl">
           I Am A <span className="font-bold">Web Developer </span>
           from Malaysia.
