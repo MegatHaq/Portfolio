@@ -16,7 +16,7 @@ export function MainContent() {
           <p className="text-sm text-gray-400">This is me!</p>
         </div>
       </div>
-      <div className="w-3/4 h-full mt-12">
+      <div className="w-full h-full mt-12">
         <PhotoContent />
       </div>
     </div>
