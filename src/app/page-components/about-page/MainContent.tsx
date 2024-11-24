@@ -10,7 +10,7 @@ export function MainContent() {
           width={150}
           height={150}
           alt="About-me"
-          className="rounded-t-full rounded-b-md"
+          className="rounded-t-md rounded-b-md"
         />
         <div className="mt-4 ml-10">
           <p className="text-sm text-gray-400">This is me!</p>
