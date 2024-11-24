@@ -1,8 +1,6 @@
 "use client";
 
 import { Label } from "@/components/ui/label";
-<<<<<<< HEAD
-=======
 import { Switch } from "@/components/ui/switch";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
@@ -27,7 +25,6 @@ export function TopBar(props: TopBarProps) {
   const inactiveLabel = "hover:cursor-pointer hover:border-b-2 border-black";
 
   const activeLabel = "border-b-2 border-[red]";
->>>>>>> features/responsive-headbar
 
   return (
     <div className="flex justify-between mx-[10vw] mt-4 py-2">

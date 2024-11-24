@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const items = [
   { label: "Home", url: "home" },
-  { label: "About", url: "about#" },
+  { label: "About", url: "about" },
   { label: "Services", url: "#" },
   { label: "Portfolio", url: "#" },
   { label: "News", url: "#" },
