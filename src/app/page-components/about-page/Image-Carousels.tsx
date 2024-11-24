@@ -16,7 +16,7 @@ type ImageCarouselsProps = {
 };
 
 export function ImageCarousels(props: ImageCarouselsProps) {
-  const { item, current, setCurrent } = props;
+  const { item, setCurrent } = props;
 
   const [api, setApi] = React.useState<CarouselApi>();
 
