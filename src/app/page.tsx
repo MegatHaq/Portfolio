@@ -1,15 +1,15 @@
+import { redirect } from "next/navigation";
 import { FirstContent } from "./page-components/home-page/FirstContent";
 import { SecondContent } from "./page-components/home-page/SecondContent";
 
-export default function Home() {
-  return (
-    <div className="h-screen w-full overflow-auto">
-      <div className="h-1/2">
-        <FirstContent />
-      </div>
-      <div className="h-1/2">
-        <SecondContent />
-      </div>
-    </div>
-  );
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  console.log(await params);
+
+  redirect("/home");
+
+  return <div className="h-screen w-full overflow-auto">Please wait</div>;
 }
