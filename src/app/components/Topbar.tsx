@@ -1,9 +1,7 @@
 "use client";
 
 import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import { usePathname } from "next/navigation";
-import clsx from "clsx";
 import Link from "next/link";
 
 interface Item {
