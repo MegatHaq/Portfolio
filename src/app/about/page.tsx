@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import { EducationContent } from "../page-components/about-page/EducationContent";
 import { MainContent } from "../page-components/about-page/MainContent";
 import { PageAbout } from "../page-components/about-page/PageAbout";
+import { WorkContent } from "../page-components/about-page/WorkContent";
 
 export default function About() {
   return (
@@ -26,7 +27,9 @@ export default function About() {
             Skills & Achievements.
           </h1>
         </div>
-        <div className="mb-20 mx-[15vw]">Contents</div>
+        <div className="mb-20 mx-[15vw]">
+          <WorkContent />
+        </div>
       </div>
       <Separator />
       <div className="mt-6">
