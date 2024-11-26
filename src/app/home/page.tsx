@@ -3,7 +3,7 @@ import { SecondContent } from "../page-components/home-page/SecondContent";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full overflow-auto scrollbar">
+    <div className="w-full">
       <div className="h-1/2">
         <FirstContent />
       </div>

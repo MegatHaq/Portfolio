@@ -27,7 +27,7 @@ export function SkillCards(props: SkillCardProps) {
       <CardContent>{content}</CardContent>
       <CardFooter className="flex gap-2">
         {skill.map((item, index) => (
-          <Button disabled={true} key={index} variant={"outline"}>
+          <Button key={index} variant={"ghost"}>
             {item}
           </Button>
         ))}

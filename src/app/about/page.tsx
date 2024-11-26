@@ -6,7 +6,7 @@ import { WorkContent } from "../page-components/about-page/WorkContent";
 
 export default function About() {
   return (
-    <div className="h-screen w-full overflow-auto scrollbar">
+    <div className=" w-full">
       <div className="flex justify-center items-center text-4xl mt-12">
         <h1 className="border-b-2 border-[red] pb-2">About Me.</h1>
       </div>

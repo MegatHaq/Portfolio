@@ -1,6 +1,6 @@
 import { Section } from "@/app/components/section";
 import { Separator } from "@/components/ui/separator";
-import { Code, Database, TestTube } from "lucide-react";
+import { Code, DatabaseZap, TestTube } from "lucide-react";
 
 export function SecondContent() {
   const section = [
@@ -15,7 +15,7 @@ export function SecondContent() {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
     {
-      Icon: Database,
+      Icon: DatabaseZap,
       title: "Data Analysis",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
