@@ -2,20 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { TopBar } from "./components/Topbar";
 import { OverviewBox } from "./components/overview";
+import { navItems } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Megat Haq",
   description: "Personal Portfolio",
 };
-
-const items = [
-  { label: "Home", url: "home" },
-  { label: "About", url: "about" },
-  { label: "Services", url: "#" },
-  { label: "Portfolio", url: "#" },
-  { label: "News", url: "#" },
-  { label: "Label", url: "#" },
-];
 
 export default async function RootLayout({
   children,
@@ -30,7 +22,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="font-primary overflow-hidden">
-        <OverviewBox TopBar={<TopBar items={items} />}>{children}</OverviewBox>
+        <OverviewBox TopBar={<TopBar items={navItems} />}>
+          {children}
+        </OverviewBox>
       </body>
     </html>
   );
