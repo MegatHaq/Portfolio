@@ -45,10 +45,7 @@ export type NavItem = {
 export const navItems: NavItem[] = [
   { label: "Home", url: "home" },
   { label: "About", url: "about" },
-  { label: "Services", url: "#" },
-  { label: "Portfolio", url: "#" },
-  { label: "News", url: "#" },
-  { label: "Label", url: "#" },
+  { label: "Projects", url: "#" },
 ];
 
 export type Card = {

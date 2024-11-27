@@ -9,8 +9,8 @@ export const OverviewBox = <T extends React.ReactNode>({
 }) => {
   return (
     <div className="flex flex-col">
-      <div>{TopBar}</div>
       <div className="h-screen overflow-auto scrollbar">
+        {TopBar}
         {children}
         <Footer />
       </div>

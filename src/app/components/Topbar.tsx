@@ -25,7 +25,7 @@ export function TopBar(props: TopBarProps) {
   const activeLabel = "border-b-2 border-[red]";
 
   return (
-    <div className="flex justify-between mx-[10vw] mt-4 py-2">
+    <div className="flex justify-between mx-[10vw] pt-8 py-2 sticky h-[10vh] top-0 z-10 backdrop-blur-sm">
       <div className="text-2xl hover:cursor-pointer font-bold">Megat.</div>
       <div className="flex gap-4 text-1xl">
         {items.map((item, index) => (

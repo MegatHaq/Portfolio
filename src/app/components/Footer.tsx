@@ -12,7 +12,7 @@ const item = [
 
 export function Footer() {
   return (
-    <div className="h-[150px] bg-slate-800 text-white flex justify-between mt-12 text-sm">
+    <div className="h-[10vh] bg-slate-800 text-white flex justify-between mt-12 text-sm">
       <div className="mx-[15vw] mt-6 flex gap-4">
         <InboxIcon />
         <div>dnmegatmehat@gmail.com</div>
