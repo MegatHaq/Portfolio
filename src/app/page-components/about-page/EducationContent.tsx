@@ -10,7 +10,7 @@ export function EducationContent() {
 
   return (
     <div className="mx-[15vw] md:flex md:flex-row py-4 flex flex-col">
-      <div className="md:w-1/2 md:mx-5 mx-8 my-6 md:my-0">
+      <div className="md:w-1/2 md:mx-5 mx-2 my-6 md:my-0">
         <ImageCarousels
           item={educationItem}
           current={current}

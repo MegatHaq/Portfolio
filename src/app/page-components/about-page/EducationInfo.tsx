@@ -20,7 +20,7 @@ export function EducationInfo(props: EducationInfoProps) {
         ))}
       </div>
       <p className="text-sm mt-4 text-justify text-gray-500">{text}</p>
-      <div className="mt-2">
+      <div className="mt-2 md:text-start text-center">
         <Badge variant={"outline"}>Final Results : {result}</Badge>
       </div>
     </div>

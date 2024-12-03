@@ -8,7 +8,7 @@ export function WorkContent() {
         <div className="">
           <h1 className="text-2xl">Professional Skills.</h1>
         </div>
-        <div className="mt-4 grid grid-cols-2 gap-2 w-full">
+        <div className="mt-4 grid md:grid-cols-2 gap-2 w-full">
           {skillItem.map((item, index) => (
             <SkillCards {...item} key={index} />
           ))}

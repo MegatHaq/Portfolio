@@ -23,9 +23,7 @@ export default function About() {
       <Separator />
       <div className="mt-6">
         <div className="flex justify-center items-center text-4xl">
-          <h1 className="border-b-2 border-[red] pb-2">
-            Skills & Achievements.
-          </h1>
+          <h1 className="border-b-2 border-[red] pb-2">Skills.</h1>
         </div>
         <div className="mb-20 mx-[15vw]">
           <WorkContent />

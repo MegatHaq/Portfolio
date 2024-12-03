@@ -13,7 +13,7 @@ export function PageAbout() {
       <Code
         width={250}
         height={200}
-        className="bg-gray-400 text-white rounded-full p-4"
+        className="bg-gray-400 text-white rounded-full p-4 xl:block hidden"
       />
       <div className="w-full">
         <Accordion type="single" collapsible className="w-full">
