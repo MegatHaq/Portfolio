@@ -46,7 +46,7 @@ export function ImageCarousels(props: ImageCarouselsProps) {
 
   return (
     <div>
-      <Carousel className="text-black w-full max-w-[20vw]" setApi={setApi}>
+      <Carousel className="text-black w-full" setApi={setApi}>
         <CarouselContent>
           {item.map((item, index) => (
             <CarouselItem key={index} className="">

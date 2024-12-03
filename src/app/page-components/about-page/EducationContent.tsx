@@ -9,8 +9,8 @@ export function EducationContent() {
   const [current, setCurrent] = React.useState(0);
 
   return (
-    <div className="mx-[15vw] flex py-4">
-      <div className="w-1/2">
+    <div className="mx-[15vw] md:flex md:flex-row py-4 flex flex-col">
+      <div className="md:w-1/2 md:mx-5 mx-8 my-6 md:my-0">
         <ImageCarousels
           item={educationItem}
           current={current}

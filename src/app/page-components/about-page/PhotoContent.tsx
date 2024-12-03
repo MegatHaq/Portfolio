@@ -1,6 +1,6 @@
 export function PhotoContent() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col text-center md:text-start">
       <h1 className="text-4xl">Hi!</h1>
       <h1 className="text-3xl mt-2">I am Megat Haq.</h1>
       <p className="text-sm text-gray-500 mt-6 text-justify">

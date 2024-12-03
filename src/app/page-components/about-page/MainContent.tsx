@@ -3,8 +3,8 @@ import { PhotoContent } from "./PhotoContent";
 
 export function MainContent() {
   return (
-    <div className="flex mx-[15vw]">
-      <div className="flex flex-col w-1/4 h-full mt-8">
+    <div className="md:flex md:flex-row flex flex-col mx-[15vw] items-center md:items-start">
+      <div className="flex flex-col md:w-1/4 h-full mt-8">
         <Image
           src={"/images/about.jpeg"}
           width={150}
@@ -12,7 +12,7 @@ export function MainContent() {
           alt="About-me"
           className="rounded-t-md rounded-b-md"
         />
-        <div className="mt-4 ml-10">
+        <div className="mt-4 md:ml-10 text-center md:text-start">
           <p className="text-sm text-gray-400">This is me!</p>
         </div>
       </div>
