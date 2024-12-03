@@ -12,12 +12,12 @@ const item = [
 
 export function Footer() {
   return (
-    <div className="h-[10vh] bg-slate-800 text-white flex justify-between mt-12 text-sm">
-      <div className="mx-[15vw] mt-6 flex gap-4">
+    <div className="md:h-[10vh] bg-slate-800 text-white md:flex md:flex-row justify-between mt-12 text-sm overflow-hidden flex flex-col items-center">
+      <div className="mx-[15vw] mt-6 flex gap-4 mb-6">
         <InboxIcon />
         <div>dnmegatmehat@gmail.com</div>
       </div>
-      <div className="mt-6 flex gap-4">
+      <div className="mt-6 flex gap-4 mb-6">
         {item.map((item, index) => {
           const Icon = item.Icon;
           return (
@@ -31,7 +31,7 @@ export function Footer() {
           );
         })}
       </div>
-      <div className="mx-[15vw] mt-6">2024@Megat Abdul Haq</div>
+      <div className="mx-[15vw] mt-6 mb-6">2024@Megat Abdul Haq</div>
     </div>
   );
 }

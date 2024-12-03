@@ -4,9 +4,9 @@ import { section } from "@/lib/constants";
 
 export function SecondContent() {
   return (
-    <div className="flex justify-center gap-4 mx-[15vw]">
+    <div className="md:flex justify-center md:gap-4 mx-[15vw]">
       {section.map((item, index) => (
-        <div className="flex" key={index}>
+        <div className="flex md:mt-0 mt-12" key={index}>
           <Section {...item} />
           {index < section.length - 1 && <Separator orientation="vertical" />}
         </div>

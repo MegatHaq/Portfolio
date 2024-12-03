@@ -7,7 +7,7 @@ export default function Home() {
       <div className="h-1/2">
         <FirstContent />
       </div>
-      <div className="h-1/2 mt-8">
+      <div className="h-1/2 md:mt-[15vh] mt-[10vh]">
         <SecondContent />
       </div>
     </div>
