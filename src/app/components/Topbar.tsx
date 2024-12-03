@@ -29,18 +29,17 @@ export function TopBar(props: TopBarProps) {
       <div className="text-2xl hover:cursor-pointer font-bold">Megat.</div>
       <div className="flex gap-4 text-1xl">
         {items.map((item, index) => (
-          <ul
+          <Link
             key={index}
             className={
               pathName.includes(item.label.toLowerCase())
                 ? activeLabel
                 : inactiveLabel
             }
+            href={item.url}
           >
-            <Link href={item.url}>
-              <Label>{item.label}</Label>
-            </Link>
-          </ul>
+            <Label>{item.label}</Label>
+          </Link>
         ))}
         {/* <ul className="items-baseline">
           <Label>Dark Mode</Label>
