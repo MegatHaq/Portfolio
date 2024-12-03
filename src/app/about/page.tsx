@@ -25,7 +25,7 @@ export default function About() {
         <div className="flex justify-center items-center text-4xl">
           <h1 className="border-b-2 border-[red] pb-2">Skills.</h1>
         </div>
-        <div className="mb-20 mx-[15vw]">
+        <div className="mb-20 mx-[10vw]">
           <WorkContent />
         </div>
       </div>
