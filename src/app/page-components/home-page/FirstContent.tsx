@@ -1,4 +1,3 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { intro } from "@/lib/constants";
 import Image from "next/image";
 
