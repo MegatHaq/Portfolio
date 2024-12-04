@@ -1,8 +1,8 @@
 "use client";
 
-import { Label } from "@/components/ui/label";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { TopBarChild } from "./TopBarChild";
 
 interface Item {
   label: string;
@@ -20,12 +20,12 @@ export function TopBar(props: TopBarProps) {
 
   console.log(pathName);
 
-  const inactiveLabel = "hover:cursor-pointer hover:border-b-2 border-black";
+  const inactiveLabel = "";
 
-  const activeLabel = "border-b-2 border-[red]";
+  const activeLabel = "";
 
   return (
-    <div className="flex justify-between mx-[10vw] pt-8 py-2 sticky h-[10vh] top-0 z-10 backdrop-blur-sm">
+    <div className="flex justify-between mx-[10vw] pt-8 py-2 sticky h-[10vh] top-0 z-10 backdrop-blur-[2px]">
       <div className="text-2xl hover:cursor-pointer font-bold">Megat.</div>
       <div className="flex gap-4 text-1xl">
         {items.map((item, index) => (
@@ -38,7 +38,7 @@ export function TopBar(props: TopBarProps) {
             }
             href={item.url}
           >
-            <Label>{item.label}</Label>
+            <TopBarChild text={item.label} />
           </Link>
         ))}
         {/* <ul className="items-baseline">

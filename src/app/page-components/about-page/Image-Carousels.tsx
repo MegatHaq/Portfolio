@@ -26,10 +26,11 @@ type ImageCarouselsProps = {
   }[];
   current: number;
   setCurrent: Dispatch<SetStateAction<number>>;
+  setMax: Dispatch<SetStateAction<number>>;
 };
 
 export function ImageCarousels(props: ImageCarouselsProps) {
-  const { item, setCurrent } = props;
+  const { item, setCurrent, setMax } = props;
 
   const [api, setApi] = React.useState<CarouselApi>();
 
@@ -37,8 +38,7 @@ export function ImageCarousels(props: ImageCarouselsProps) {
     if (!api) {
       return;
     }
-    setCurrent(api.selectedScrollSnap());
-
+    setMax(item.length);
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap());
     });

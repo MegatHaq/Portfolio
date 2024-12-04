@@ -14,7 +14,7 @@ export default function About() {
         <MainContent />
       </div>
       <Separator />
-      <div className="w-full mt-6">
+      <div className="w-full mt-6 relative">
         <div className="flex justify-center items-center text-4xl mb-8">
           <h1 className="border-b-2 border-[red] pb-2">Education.</h1>
         </div>
